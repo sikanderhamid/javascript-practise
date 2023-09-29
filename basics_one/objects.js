@@ -17,7 +17,28 @@ const Jsuser = {
 //console.log(Jsuser["fullName"]);
 //console.log(Jsuser[mysymbol]);
 Jsuser.email = "hamid@google.com"
-console.log(Jsuser.email);
+//console.log(Jsuser.email);
 Object.freeze(Jsuser)
 Jsuser.email = "hell@hbl.com"
-console.log(Jsuser);
+//console.log(Jsuser);
+const tinderUser = {}
+tinderUser.id = "sik123"
+tinderUser.name = "sikander"
+tinderUser.isLoggedin = false
+//console.log(tinderUser)
+
+const regularUser = {
+    email:"sikandergmx@google.com",
+    fullName:{
+        userFullName:{
+        firstName:"Tom",
+        lastName:"Cruise"
+        }
+    }
+}
+//console.log(regularUser.fullName);
+//console.log(regularUser.fullName.userFullName.firstName);
+const key1 = {1:"a",2:"b"}
+const key2 = {3:"c",4:"d"}
+const key3 = Object.assign({},key1,key2)
+console.log(key3);
