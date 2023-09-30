@@ -17,10 +17,20 @@ const another_array = [2,3,6,[4,7,8],11,13,[2,6,[7,8]]]
 const full_array = another_array.flat(Infinity)
 //console.log(full_array);
 
-console.log(Array.isArray("sikander"));
-console.log(Array.from("sikander"));
+//console.log(Array.isArray("sikander"));
+//console.log(Array.from("sikander"));
 
 const score1 = 200
 const score2 = 300
 const score3 = 400
-console.log(Array.of(score1,score2,score3));
+//console.log(Array.of(score1,score2,score3));
+
+const course = {
+    courseName:"Intro to Java",
+    price:"500$",
+    year:1990
+}
+const{price} = course
+//console.log(price);
+const {courseName:Name} = course
+console.log(Name);
