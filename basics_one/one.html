@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+    <style>
+        #bg-black{
+            background-color: rgba(0, 0, 0, 0.719);
+            color:#fff;
+        }
+    </style>
+    
+</head>
+<body id="bg-black">
+    <div>
+        <h1 id="title" class="heading">SIKANDER HAMID</h1>
+        <p>lorem ipsum donor it</p>
+        <ul>
+            <li>ONE</li>
+            <li>TWO</li>
+            <li>THREE</li>
+            <li>FOUR</li>
+        </ul>
+        
+    </div>
+    <script>
+         let a = document.querySelectorAll("li")
+         let b = Array.from(a)
+         b.forEach((item)=>{
+           item.innerText = "hello"
+         })
+
+    </script>
+</body>
+</html>
