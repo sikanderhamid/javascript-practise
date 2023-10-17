@@ -8,3 +8,10 @@ myNumbers.forEach((num)=>{
     }
 })
 //console.log(newNum);
+
+const codes = [12,55,77,99,11]
+const newCode = codes.map((num)=>num*2)
+                .map((num)=>num+1)
+                .filter((num)=>num>120)
+//console.log(newCode);                
+                 
