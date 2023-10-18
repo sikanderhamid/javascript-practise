@@ -15,8 +15,33 @@
             <li><img width="200px" src="https://images.pexels.com/photos/16663661/pexels-photo-16663661/free-photo-of-people-standing-on-pier-in-green-nature-landscape.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="max" alt=""></li>
             <li><img width="200px" src="https://images.pexels.com/photos/16455158/pexels-photo-16455158/free-photo-of-u-bahn-viadukt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="maxi" alt=""></li>
             <li><img width="200px" src="https://images.pexels.com/photos/5574268/pexels-photo-5574268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="three" alt=""></li>
-            <li><a href="http://google.com">GOOGLE</a></li>
+            <li><a style="color:white;" id="google" href="http://google.com">GOOGLE</a></li>
         </ul>
     </div>
 </body>
+<script>
+    document.getElementById("images").addEventListener("click",function(e){
+        console.log("images are clicked");
+    },false)
+
+    document.getElementById("ptwo").addEventListener("click",function(e){
+        console.log("ptwo clicked only");
+        e.stopPropagation();
+    },false)
+
+    document.getElementById("google").addEventListener("click",function(e){
+        
+        console.log("google clicked");
+        e.preventDefault();
+        e.stopPropagation()
+    },false)
+
+    document.querySelector("#images").addEventListener("click",function(e){
+        console.log(e.target.tagName);
+    },false)
+    //type,timestamp,defaultprevented,
+    //toElement,srcElement,target,currentTarget
+    // clientX,clientY,screenX,screenY
+    //altKey,ctrlKey,shiftKey
+</script>
 </html>
